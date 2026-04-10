@@ -7,7 +7,7 @@
 
 /* VARIÁVEIS */
 :root {
-    --bg: #0f172a;
+    --bg: #000000;
     --text: #FBF5F3;
     --primary: #1098F7;
     --secondary: #23CE6B;
@@ -22,27 +22,57 @@ body {
 }
 
 /* NAV */
-nav {
+.navbar {
     position: fixed;
+    background-color: var(--bg);
     width: 100%;
     top: 0;
-    padding: 20px;
+    padding: 20px 40px;
     display: flex;
     justify-content: center;
-    gap: 120px;
+    align-items: center;
     z-index: 1000;
 }
 
-nav a {
-    color: #c2c2c2;
+.menu {
+    display: flex;
+    gap: 120px;
+    list-style: none;
+}
+
+.menu li {
+ list-style: none;
+}
+
+.menu li a{
+    color: #9c9b9b;
     text-decoration: none;
     font-weight: 500;
     transition: 0.3s;
 }
 
-nav a:hover {
+.menu a:hover {
     color: var(--text);
     transform: translateY(-2px);
+}
+
+.btn-contato {
+    position: absolute;
+    right: 60px;
+}
+
+.btn-contato button {
+    padding: 10px 25px;
+    background-color: var(--primary);
+    border: none;
+    border-radius: 20px;
+    color: #f8f8f8;
+}
+
+.btn-contato button:hover {
+    background-color: var(--secondary);
+    transition: .5s;
+    cursor: pointer;
 }
 
 /* HOME */
